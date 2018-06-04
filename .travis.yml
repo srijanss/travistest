@@ -7,9 +7,9 @@ python:
 - '3.6.4'
 
 install:
-- pipenv install
+- make 
 
-script: pytest
+script: make test
 
 after_script: cd ~
 
