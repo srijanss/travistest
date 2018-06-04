@@ -1,5 +1,5 @@
 init:
-	pip isntall pipenv
+	pip install pipenv
 	pipenv install
 test:
 	pytest
