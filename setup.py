@@ -1,9 +1,22 @@
-from distutils.core import setup
+import setuptools
 
-setup(
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
+
+setuptools.setup(
     name='travistest',
     packages=['travistest'],
-    version='0.0.9',
+    version='0.0.10',
+    author="Srijan Manandhar",
+    author_email="srijan.manandhar@gmail.com",
     description='Test project to get acquainted with TravisCI',
-    url='https://github.com/srijanss/travistest'
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://github.com/srijanss/travistest',
+    packages=setuptools.find_packages(),
+    classifiers=(
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ),
 )
